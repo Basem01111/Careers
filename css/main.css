@@ -1,0 +1,164 @@
+.fs-10px {
+  font-size: 10px;
+}
+
+.fs-11px {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13px {
+  font-size: 13px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-15px {
+  font-size: 15px;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.fs-26px {
+  font-size: 26px;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-150px {
+  width: 150px;
+}
+
+.main-color {
+  color: #000000;
+}
+
+.gap-1px {
+  gap: 1px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  background-color: #F3F3F3;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.top-nav {
+  background-color: #000000;
+  color: white;
+  font-size: 14px;
+  padding: 12px 0;
+}
+.top-nav .items {
+  display: flex;
+  align-items: center;
+  gap: 107px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .top-nav .items {
+    gap: 2rem;
+  }
+}
+.top-nav .items .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.top-nav .items .item .icon {
+  height: auto;
+  width: 14px;
+}
+
+.bottom-nav {
+  background-color: transparent !important;
+  color: #000000;
+  padding: calc(2rem - 6px) 0;
+}
+.bottom-nav .logo {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+}
+.bottom-nav .navbar-nav {
+  gap: 61px;
+}
+@media (max-width: 991.98px) {
+  .bottom-nav .navbar-nav {
+    gap: 0.5rem;
+  }
+}
+.bottom-nav .navbar-nav .nav-link {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 5px 0 !important;
+  border-bottom: 2px solid transparent;
+}
+.bottom-nav .navbar-nav .nav-link.active {
+  border-bottom-color: #000000;
+  color: #000000 !important;
+}
+.bottom-nav .btn-nav {
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 5px 20px;
+}/*# sourceMappingURL=main.css.map */
