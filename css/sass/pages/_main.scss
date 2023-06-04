@@ -1,0 +1,86 @@
+.landing-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 45px - 96.82px);
+  background: url("../images/wav-bg.png") no-repeat bottom / contain;
+  @include maxWidth(sm) {
+    height: calc(100vh - 96.82px);
+    padding: 80px 0px;
+  }
+  .landing-content {
+    @include full-w-h;
+    @include flex-center;
+    .landing-text {
+      @include full-w-h;
+      @include flex-column-right;
+      position: relative;
+      z-index: 11;
+      padding-right: 60px;
+      text-align: right;
+      color: $white;
+      @include maxWidth(xs) {
+        padding-right: 10px;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 75px;
+        margin-bottom: 0;
+      }
+      .des {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 60px;
+      }
+      @include maxWidth(md) {
+        .title {
+          font-size: 31px;
+          line-height: 60px;
+        }
+        .des {
+          font-size: 21px;
+          line-height: 50px;
+        }
+    }
+      .btn-holder {
+        .btn-landing {
+          width: 200px;
+          height: 53px;
+          line-height: 53px;
+          background-color: $black;
+          border-radius: 4px;
+          font-weight: 600;
+          font-size: 15px;
+          color: $white;
+          img {
+            width: 16px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+    .landing-img {
+      @include full-w-h;
+      position: relative;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 470px;
+        @include maxWidth(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+}

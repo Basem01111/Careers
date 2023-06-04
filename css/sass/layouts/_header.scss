@@ -1,61 +1,117 @@
 .top-nav {
-    background-color: $main-color;
-    color: $white;
-    font-size: 14px;
-    padding: 12px 0;
-    .items {
-        display: flex;
-        align-items: center;
-        gap: 107px;
-        flex-wrap: wrap;
-        @include maxWidth(sm) {
-            gap: 2rem;
-        }
-        .item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            .icon {
-                height: auto;
-                width: 14px;
-            }
-        }
+  @include maxWidth(sm) {
+    display: none;
+  }
+  background-color: $main-color;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  .items {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    @include maxWidth(sm) {
+      gap: 1rem;
     }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      .icon {
+        height: auto;
+        width: 15px;
+      }
+      &.email {
+        border-left: 1px solid #ffffff33;
+        padding-left: 30px;
+        @include maxWidth(sm) {
+          padding-left: 13px;
+        }
+      }
+    }
+  }
 }
 
 .bottom-nav {
-    background-color: transparent !important;
-    color: $text-color1;
-    padding: calc(2rem - 6px) 0;
+  position: relative;
+  background-color: $white;
+  color: $text-color1;
+  z-index: 111;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    max-width: 100%;
+    height: 300px;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
+    @include maxWidth(lg) {
+      clip-path: unset;
+      width: 165px;
+      height: 96.82px;
+    }
+  }
+  .container-fluid {
+    padding: 0 40px;
     .logo {
-        color: $main-color;
-        font-weight: 700;
-        font-size: 24px;
+      position: relative;
+      margin: 0;
+      .navbar-brand {
+        img {
+          width: 80px;
+          height: auto;
+        }
+      }
+    }
+    .navbar-toggler {
+      border: none;
+      svg {
+        font-size: 28px;
+      }
+      &:focus {
+        box-shadow: none;
+      }
     }
     .navbar-nav {
-        gap: 61px;
-        @include maxWidth(md) {
-            gap: 0.5rem;
+      gap: 25px;
+      @include maxWidth(md) {
+        gap: 0.5rem;
+      }
+      .nav-link {
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 600;
+        font-size: 18px;
+        transition: color $sm-transition;
+        &.active {
+          font-weight: 700;
+          color: $black !important;
         }
-        .nav-link {
-            color: $text-color1 !important;
-            font-weight: 500 !important;
-            font-size: 16px !important;
-            padding: 5px 0 !important;
-            border-bottom: 2px solid transparent;
-            &.active {
-                border-bottom-color: $main-color;
-                color: $main-color !important;
-            }
+        &:hover {
+          color: $black !important;
         }
+      }
     }
-    .btn-nav {
-     border-radius: 4px;
-     background-color: $main-color;
-     color: $white;
-     font-size: 14px;
-     line-height: 26px;
-
-     padding: 5px 20px;
+    .btn-reg-option {
+      display: inline-block;
+      width: 115px;
+      max-width: 100%;
+      height: 43px;
+      line-height: 43px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      background-color: $white;
+      border: 1px solid $black;
+      border-radius: 4px;
+      transition: $sm-transition;
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
     }
+  }
 }

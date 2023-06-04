@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 16px;
-  background-color: #F3F3F3;
+  background-color: #fff;
   color: $text-color1;
 }
 // reset Ul
@@ -28,4 +28,45 @@ button {
 input:focus,
 select:focus {
   outline: none;
+}
+
+.img-full-place {
+  @include full-w-h;
+  img {
+    @include full-w-h;
+  }
+}
+
+.main-table {
+  thead {
+    background-color: #9b9b9b;
+    tr {
+      th {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: right;
+        color: #ffffff;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-weight: 600;
+        font-size: 15px;
+        text-align: right;
+        color: #000000;
+      }
+    }
+  }
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: white !important;
+}
+
+.green-color {
+  color: #19db67;
+}
+.red-color {
+  color: #bd3434;
 }
