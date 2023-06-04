@@ -387,7 +387,6 @@ select:focus {
 @media (max-width: 767.98px) {
   .landing-section {
     height: calc(100vh - 96.82px);
-    padding: 80px 0px;
   }
 }
 .landing-section .right-side {
