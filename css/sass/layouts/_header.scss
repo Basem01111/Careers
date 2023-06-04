@@ -42,13 +42,15 @@
   &::before {
     content: "";
     position: absolute;
+    // height: 300px;
     width: 500px;
     max-width: 100%;
-    height: 300px;
+    height: 400px;
     right: 0px;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.7);
-    clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
+    // clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
+    clip-path: polygon(42% 0%, 100% 0%, 100% 76%);
     @include maxWidth(lg) {
       clip-path: unset;
       width: 165px;
@@ -77,14 +79,14 @@
       }
     }
     .navbar-nav {
-      gap: 25px;
+      gap: 15px;
       @include maxWidth(md) {
         gap: 0.5rem;
       }
       .nav-link {
         color: rgba(0, 0, 0, 0.6);
         font-weight: 600;
-        font-size: 18px;
+        font-size: 17px;
         transition: color $sm-transition;
         &.active {
           font-weight: 700;

@@ -1,21 +1,72 @@
 .landing-section {
-  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 45px - 96.82px);
-  background: url("../images/wav-bg.png") no-repeat bottom / contain;
   @include maxWidth(sm) {
     height: calc(100vh - 96.82px);
     padding: 80px 0px;
   }
+  .right-side {
+    flex-basis: 4%;
+    height: 100%;
+    background-color: $black;
+    clip-path: polygon(0% 0%, 100% 21%, 100% 100%, 0% 100%);
+    transform: translateY(90px);
+    @include flex-center;
+    align-items: flex-end;
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      li {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        width: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 17px;
+        padding-top: 35px;
+        span {
+          transform: rotate(270deg);
+          margin-bottom: 15px;
+        }
+      }
+    }
+    @include maxWidth(lg) {
+      display: none;
+    }
+  }
   .landing-content {
-    @include full-w-h;
+    position: relative;
+    flex-basis: 96%;
+    height: 100%;
+    padding: 20px;
+    background: url("../images/wav-bg.png") no-repeat bottom / contain;
+    @include maxWidth(lg) {
+      flex-basis: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
     @include flex-center;
     .landing-text {
       @include full-w-h;
       @include flex-column-right;
       position: relative;
       z-index: 11;
-      padding-right: 60px;
+      padding-right: 80px;
       text-align: right;
       color: $white;
       @include maxWidth(xs) {
@@ -30,7 +81,7 @@
       .des {
         margin-bottom: 15px;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 25px;
         line-height: 60px;
       }
       @include maxWidth(md) {
@@ -42,7 +93,7 @@
           font-size: 21px;
           line-height: 50px;
         }
-    }
+      }
       .btn-holder {
         .btn-landing {
           width: 200px;
@@ -72,15 +123,5 @@
         }
       }
     }
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
   }
 }

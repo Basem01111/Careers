@@ -303,12 +303,12 @@ select:focus {
   position: absolute;
   width: 500px;
   max-width: 100%;
-  height: 300px;
+  height: 400px;
   right: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
-          clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
+  -webkit-clip-path: polygon(42% 0%, 100% 0%, 100% 76%);
+          clip-path: polygon(42% 0%, 100% 0%, 100% 76%);
 }
 @media (max-width: 1199.98px) {
   .bottom-nav::before {
@@ -339,7 +339,7 @@ select:focus {
   box-shadow: none;
 }
 .bottom-nav .container-fluid .navbar-nav {
-  gap: 25px;
+  gap: 15px;
 }
 @media (max-width: 991.98px) {
   .bottom-nav .container-fluid .navbar-nav {
@@ -349,7 +349,7 @@ select:focus {
 .bottom-nav .container-fluid .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   transition: color 0.3s;
 }
 .bottom-nav .container-fluid .navbar-nav .nav-link.active {
@@ -379,10 +379,10 @@ select:focus {
 }
 
 .landing-section {
-  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 45px - 96.82px);
-  background: url("../images/wav-bg.png") no-repeat bottom/contain;
 }
 @media (max-width: 767.98px) {
   .landing-section {
@@ -390,12 +390,69 @@ select:focus {
     padding: 80px 0px;
   }
 }
-.landing-section .landing-content {
-  width: 100%;
+.landing-section .right-side {
+  flex-basis: 4%;
   height: 100%;
+  background-color: #000000;
+  -webkit-clip-path: polygon(0% 0%, 100% 21%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 21%, 100% 100%, 0% 100%);
+  transform: translateY(90px);
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: flex-end;
+}
+.landing-section .right-side .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-section .right-side .social li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 17px;
+  padding-top: 35px;
+}
+.landing-section .right-side .social li span {
+  transform: rotate(270deg);
+  margin-bottom: 15px;
+}
+@media (max-width: 1199.98px) {
+  .landing-section .right-side {
+    display: none;
+  }
+}
+.landing-section .landing-content {
+  position: relative;
+  flex-basis: 96%;
+  height: 100%;
+  padding: 20px;
+  background: url("../images/wav-bg.png") no-repeat bottom/contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  .landing-section .landing-content {
+    flex-basis: 100%;
+  }
+}
+.landing-section .landing-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .landing-section .landing-content .landing-text {
   width: 100%;
@@ -406,7 +463,7 @@ select:focus {
   justify-content: center;
   position: relative;
   z-index: 11;
-  padding-right: 60px;
+  padding-right: 80px;
   text-align: right;
   color: white;
 }
@@ -424,7 +481,7 @@ select:focus {
 .landing-section .landing-content .landing-text .des {
   margin-bottom: 15px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 60px;
 }
 @media (max-width: 991.98px) {
@@ -465,14 +522,4 @@ select:focus {
   .landing-section .landing-content .landing-img img {
     display: none;
   }
-}
-.landing-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
