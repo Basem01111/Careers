@@ -50,11 +50,12 @@
     top: 0px;
     background-color: rgba(0, 0, 0, 0.7);
     // clip-path: polygon(50% 0%, 100% 0%, 100% 60%);
-    clip-path: polygon(42% 0%, 100% 0%, 100% 76%);
-    @include maxWidth(lg) {
-      clip-path: unset;
-      width: 165px;
-      height: 96.82px;
+    clip-path: polygon(42% -1%, 100% -1%, 100% 72%);
+  }
+  @include maxWidth(lg) {
+    background-color: rgba(0, 0, 0, 0.7);
+    &::before {
+      display: none;
     }
   }
   .container-fluid {
@@ -86,8 +87,13 @@
       .nav-link {
         color: rgba(0, 0, 0, 0.6);
         font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
         transition: color $sm-transition;
+        @include maxWidth(lg) {
+          font-size: 15px;
+          padding: 0 !important;
+          color: white;
+        }
         &.active {
           font-weight: 700;
           color: $black !important;

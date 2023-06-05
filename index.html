@@ -1,321 +1,1096 @@
 <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>وظائف</title>
+        <!-- Main Css Normalize File -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Main Css Bootstrap RTL File -->
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <!-- Main Css FontAwesome File -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main Css Swiper File -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <!-- Main Css File -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Main Css Fonts File -->
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>وظائف</title>
-    <!-- Main Css Normalize File -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!-- Main Css Bootstrap RTL File -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <!-- Main Css FontAwesome File -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Main Css Swiper File -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- Main Css File -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Main Css Fonts File -->
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-</head>
-
-<body>
-    <!-- Start Nav -->
-    <nav class="top-nav">
-        <div class="container d-flex align-items-center justify-content-between gap-1 gap-xl-4 flex-wrap">
-            <div class="items">
-                <div class="item email">
-                    <img src="./images/icon/email-white.png" alt="" class="icon" />
-                    example@example.com
+    <body>
+        <!-- Start Nav -->
+        <nav class="top-nav">
+            <div
+                class="container d-flex align-items-center justify-content-between gap-1 gap-xl-4 flex-wrap"
+            >
+                <div class="items">
+                    <div class="item email">
+                        <img
+                            src="./images/icon/email-white.png"
+                            alt=""
+                            class="icon"
+                        />
+                        example@example.com
+                    </div>
+                    <div class="item">
+                        <img
+                            src="./images/icon/clock-white.png"
+                            alt=""
+                            class="icon"
+                        />
+                        <bdi>الاثنين - الجمعة : 08:30 صباحا - 6:30 مساءا</bdi>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="./images/icon/clock-white.png" alt="" class="icon" />
-                    <bdi>الاثنين - الجمعة : 08:30 صباحا - 6:30 مساءا</bdi>
+                <div class="items">
+                    <div class="item">
+                        <img
+                            src="./images/icon/location-white.png"
+                            alt=""
+                            class="icon"
+                        />
+                        23 شارع الملك عبد العزيز - الرياض
+                    </div>
+                    <div class="item">
+                        EN
+                        <img
+                            src="./images/icon/world-white.png"
+                            alt=""
+                            class="icon"
+                        />
+                    </div>
                 </div>
             </div>
-            <div class="items">
-                <div class="item">
-                    <img src="./images/icon/location-white.png" alt="" class="icon" />
-                    23 شارع الملك عبد العزيز - الرياض
+        </nav>
+        <nav class="navbar bottom-nav navbar-dark navbar-expand-xl">
+            <div class="container-fluid">
+                <h1 class="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/site-logo.png" alt="Site logo" />
+                    </a>
+                </h1>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mt-3 mt-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"
+                                >الرئيسية</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نبذة عن الموقع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الباقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">التدريب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">صاحب العمل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">طالبي العمل</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="item">
-                    EN
-                    <img src="./images/icon/world-white.png" alt="" class="icon" />
+                <div
+                    class="flex-grow-0 mt-4 mt-xl-0 collapse navbar-collapse justify-content-center gap-2"
+                    id="navbarSupportedContent"
+                >
+                    <a href="" class="btn-reg-option">تسجيل دخول</a>
+                    <a href="" class="btn-reg-option">اشتراك</a>
                 </div>
             </div>
-        </div>
-    </nav>
-    <nav class="navbar bottom-nav navbar-expand-xl">
-        <div class="container-fluid">
-            <h1 class="logo">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/site-logo.png" alt="Site logo">
-                </a>
-            </h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mt-3 mt-xl-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">الرئيسية</a>
+        </nav>
+        <!-- End Nav -->
+        <!-- Start Landing -->
+        <section class="landing-section">
+            <div class="right-side">
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <span> Linkdin </span>
+                            <img src="images/social-1.png" alt="social image" />
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">نبذة عن الموقع</a>
+                    <li>
+                        <a href="">
+                            <span> Twitter </span>
+                            <img src="images/social-2.png" alt="social image" />
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الباقات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">التدريب</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">اتصل بنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">صاحب العمل</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">طالبي العمل</a>
+                    <li>
+                        <a href="">
+                            <span> Facebook </span>
+                            <img
+                                src="images/social-3.png"
+                                class="mt-2"
+                                alt="social image"
+                            />
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="flex-grow-0 mt-4 mt-xl-0 collapse navbar-collapse justify-content-center gap-2"
-                id="navbarSupportedContent">
-                <a href="" class="btn-reg-option">تسجيل دخول</a>
-                <a href="" class="btn-reg-option">اشتراك</a>
-            </div>
-        </div>
-    </nav>
-    <!-- End Nav -->
-    <!-- Start Landing -->
-    <section class="landing-section">
-        <div class="right-side">
-            <ul class="social">
-                <li>
-                    <span>
-                        Linkdin
-                    </span>
-                    <img src="images/social-1.png" alt="social image">
-                </li>
-                <li>
-                    <span>
-                        Twitter
-                    </span>
-                    <img src="images/social-2.png" alt="social image">
-                </li>
-                <li>
-                    <span>
-                        Facebook
-                    </span>
-                    <img src="images/social-3.png" class="mt-2" alt="social image">
-                </li>
-            </ul>
-        </div>
-        <div class="landing-content">
-            <div class="row g-3">
-                <div class="col-12 col-md-7 mt-0">
-                    <div class="landing-text">
-                        <h4 class="title">تباهي للتوظيف</h4>
-                        <p class="des">
-                            بوابة متخصصة في توفير بيئة تفاعلية عبر الإنترنت لربط أصحاب العمل والشباب المؤهل في
-                            المملكة
-                            العربية السعودية ، يجمع بين الفعالية وسهولة الاستخدام والتصفح ........
-                        </p>
-                        <div class="btn-holder">
-                            <button class="btn-landing">مشاهدة المزيد <img src="images/icon/long-arrow-white.png"
-                                    alt="arrow"></button>
+            <div class="landing-content">
+                <div class="row g-3">
+                    <div class="col-12 col-md-7 mt-0">
+                        <div class="landing-text">
+                            <h4 class="title">تباهي للتوظيف</h4>
+                            <p class="des">
+                                بوابة متخصصة في توفير بيئة تفاعلية عبر الإنترنت
+                                لربط أصحاب العمل والشباب المؤهل في المملكة
+                                العربية السعودية ، يجمع بين الفعالية وسهولة
+                                الاستخدام والتصفح ........
+                            </p>
+                            <div class="btn-holder">
+                                <button class="btn-landing">
+                                    مشاهدة المزيد
+                                    <img
+                                        src="images/icon/long-arrow-white.png"
+                                        alt="arrow"
+                                    />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-5 mt-0">
-                    <div class="landing-img">
-                        <img src="images/landing-img.png" alt="landing image">
+                    <div class="col-12 col-md-5 mt-0">
+                        <div class="landing-img">
+                            <img
+                                src="images/landing-img.png"
+                                alt="landing image"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Landing -->
-    <!-- Start Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-12">
-                    <div class="box-search mb-4 ms-0 ms-xl-4">
-                        <div class="inp-holder">
-                            <img src="images/icon/search.png" alt="search" class="search">
-                            <input type="search" name="" id="" placeholder="بحث الوظائف السريع...........">
-                        </div>
-                        <div class="btn-holder">
-                            <button class="btn-search">بحث</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 col-xl-8 d-flex flex-column justify-content-center">
-                    <h5 class="heading">الوظائف الحكومية</h5>
-                    <div class="row g-4">
-                        <div class="col-12 col-md-12">
-                            <a href="#" class="box-job">
-                                <div class="icon"><i class="fa-solid fa-circle open"></i></div>
-                                <p class="name">
-                                    الصندوق الصناعي يعلن فتح التقديم في برامج نخب المنتهية بالتوظيف 2023م
-                                </p>
-                                <h6 class="status">(التقديم مفتوح)</h6>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-12">
-                            <a href="#" class="box-job">
-                                <div class="icon"><i class="fa-solid fa-circle open"></i></div>
-                                <p class="name">
-                                    الصندوق الصناعي يعلن فتح التقديم في برامج نخب المنتهية بالتوظيف 2023م
-                                </p>
-                                <h6 class="status">(التقديم مفتوح)</h6>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-12">
-                            <a href="#" class="box-job">
-                                <div class="icon"><i class="fa-solid fa-circle close"></i></div>
-                                <p class="name">
-                                    الصندوق الصناعي يعلن فتح التقديم في برامج نخب المنتهية بالتوظيف 2023م
-                                </p>
-                                <h6 class="status">(التقديم مغلق)</h6>
-                            </a>
+        </section>
+        <!-- End Landing -->
+        <!-- Start Section -->
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-12">
+                        <div class="box-search mb-4 ms-0 ms-xl-4">
+                            <div class="inp-holder">
+                                <img
+                                    src="images/icon/search.png"
+                                    alt="search"
+                                    class="search"
+                                />
+                                <input
+                                    type="search"
+                                    name=""
+                                    id=""
+                                    placeholder="بحث الوظائف السريع..........."
+                                />
+                            </div>
+                            <div class="btn-holder">
+                                <button class="btn-search">بحث</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4 col-xl-4">
-                    <div class="img-full-place d-none d-md-block">
-                        <img src="images/Rectangle.png" alt="image">
+                    <div
+                        class="col-12 col-lg-8 col-xl-8 d-flex flex-column justify-content-center"
+                    >
+                        <h5 class="heading">الوظائف الحكومية</h5>
+                        <div class="row g-4">
+                            <div class="col-12 col-md-12">
+                                <a href="#" class="box-job">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-circle open"></i>
+                                    </div>
+                                    <p class="name">
+                                        الصندوق الصناعي يعلن فتح التقديم في
+                                        برامج نخب المنتهية بالتوظيف 2023م
+                                    </p>
+                                    <h6 class="status">(التقديم مفتوح)</h6>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <a href="#" class="box-job">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-circle open"></i>
+                                    </div>
+                                    <p class="name">
+                                        الصندوق الصناعي يعلن فتح التقديم في
+                                        برامج نخب المنتهية بالتوظيف 2023م
+                                    </p>
+                                    <h6 class="status">(التقديم مفتوح)</h6>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <a href="#" class="box-job">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-circle close"></i>
+                                    </div>
+                                    <p class="name">
+                                        الصندوق الصناعي يعلن فتح التقديم في
+                                        برامج نخب المنتهية بالتوظيف 2023م
+                                    </p>
+                                    <h6 class="status">(التقديم مغلق)</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="img-full-place d-none d-md-block">
+                            <img src="images/Rectangle.png" alt="image" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Section -->
-    <!-- Start Section -->
-    <Section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-lg-8 col-xl-8">
-                    <h5 class="heading">آخر الوظائف المتاحة</h5>
-                    <div class="box-gray">
-                        <h6 class="sm-heading">قائمة أحدث وظائف أصحاب العمل</h6>
-                        <div class="table-responsive">
-                            <table class="main-table table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th class="text-nowrap">تاريخ الإضافة</th>
-                                        <th class="text-nowrap">المسمى الوظيفي</th>
-                                        <th class="text-nowrap">الفئة المستهدفة</th>
-                                        <th class="text-nowrap">مكان العمل</th>
-                                        <th class="text-nowrap">زيارات</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-nowrap">02/6/2023</td>
-                                        <td>
-                                            <i class="fa-solid fa-circle green-color me-3"></i>
-                                            <b>معقب</b>
-                                        </td>
-                                        <td class="text-nowrap">سعودي فقط - للجنسين</td>
-                                        <td class="text-nowrap">الخرج - منطقة الرياض</td>
-                                        <td class="text-danger text-nowrap"><b>200</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-nowrap">02/6/2023</td>
-                                        <td>
-                                            <i class="fa-solid fa-circle green-color me-3"></i>
-                                            <b>معقب</b>
-                                        </td>
-                                        <td class="text-nowrap">سعودي فقط - للجنسين</td>
-                                        <td class="text-nowrap">الخرج - منطقة الرياض</td>
-                                        <td class="text-danger text-nowrap"><b>200</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-nowrap">02/6/2023</td>
-                                        <td>
-                                            <i class="fa-solid fa-circle green-color me-3"></i>
-                                            <b>معقب</b>
-                                        </td>
-                                        <td class="text-nowrap">سعودي فقط - للجنسين</td>
-                                        <td class="text-nowrap">الخرج - منطقة الرياض</td>
-                                        <td class="text-danger text-nowrap"><b>200</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-nowrap">02/6/2023</td>
-                                        <td>
-                                            <i class="fa-solid fa-circle green-color me-3"></i>
-                                            <b>معقب</b>
-                                        </td>
-                                        <td class="text-nowrap">سعودي فقط - للجنسين</td>
-                                        <td class="text-nowrap">الخرج - منطقة الرياض</td>
-                                        <td class="text-danger text-nowrap"><b>200</b></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="btn-holder d-flex align-items-center justify-content-center">
-                                <button class=" btn btn-outline-secondary">عرض جميع الوظائف</button>
+        </section>
+        <!-- End Section -->
+        <!-- Start Section -->
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-8 col-xl-8">
+                        <h5 class="heading">آخر الوظائف المتاحة</h5>
+                        <div class="box-gray">
+                            <h6 class="sm-heading">
+                                قائمة أحدث وظائف أصحاب العمل
+                            </h6>
+                            <div class="table-responsive">
+                                <table class="main-table table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-nowrap">
+                                                تاريخ الإضافة
+                                            </th>
+                                            <th class="text-nowrap">
+                                                المسمى الوظيفي
+                                            </th>
+                                            <th class="text-nowrap">
+                                                الفئة المستهدفة
+                                            </th>
+                                            <th class="text-nowrap">
+                                                مكان العمل
+                                            </th>
+                                            <th class="text-nowrap">زيارات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                02/6/2023
+                                            </td>
+                                            <td>
+                                                <i
+                                                    class="fa-solid fa-circle green-color me-3"
+                                                ></i>
+                                                <b>معقب</b>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                سعودي فقط - للجنسين
+                                            </td>
+                                            <td class="text-nowrap">
+                                                الخرج - منطقة الرياض
+                                            </td>
+                                            <td class="text-danger text-nowrap">
+                                                <b>200</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                02/6/2023
+                                            </td>
+                                            <td>
+                                                <i
+                                                    class="fa-solid fa-circle green-color me-3"
+                                                ></i>
+                                                <b>معقب</b>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                سعودي فقط - للجنسين
+                                            </td>
+                                            <td class="text-nowrap">
+                                                الخرج - منطقة الرياض
+                                            </td>
+                                            <td class="text-danger text-nowrap">
+                                                <b>200</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                02/6/2023
+                                            </td>
+                                            <td>
+                                                <i
+                                                    class="fa-solid fa-circle green-color me-3"
+                                                ></i>
+                                                <b>معقب</b>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                سعودي فقط - للجنسين
+                                            </td>
+                                            <td class="text-nowrap">
+                                                الخرج - منطقة الرياض
+                                            </td>
+                                            <td class="text-danger text-nowrap">
+                                                <b>200</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                02/6/2023
+                                            </td>
+                                            <td>
+                                                <i
+                                                    class="fa-solid fa-circle green-color me-3"
+                                                ></i>
+                                                <b>معقب</b>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                سعودي فقط - للجنسين
+                                            </td>
+                                            <td class="text-nowrap">
+                                                الخرج - منطقة الرياض
+                                            </td>
+                                            <td class="text-danger text-nowrap">
+                                                <b>200</b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div
+                                    class="btn-holder d-flex align-items-center justify-content-center"
+                                >
+                                    <button class="btn btn-outline-secondary">
+                                        عرض جميع الوظائف
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <h5 class="heading">أبرز شركات العمل</h5>
+                        <div class="blocks-img mb-4">
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
+                            </div>
+                            <div class="img-holder">
+                                <img src="images/company.png" alt="image" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-4">
-                    <h5 class="heading">أبرز شركات العمل</h5>
-                    <div class="blocks-img mb-4">
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Start Section -->
+        <section class="pt-4 pb-5">
+            <div class="container">
+                <h5 class="heading">التدريب</h5>
+                <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                    <div class="col">
+                        <div class="box-training">
+                            <div class="title">دورة</div>
+                            <div class="title-sm">القدرة المعرفية</div>
+                            <div class="price">
+                                <span>خصم 33%</span>
+                                <span class="num">$250</span>
+                                <span>50$ / الشهر</span>
+                            </div>
+                            <div class="user">
+                                <img
+                                    src="./images/user.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                محمود العارفي
+                            </div>
+                            <div class="text-box">القدرة المعرفية..</div>
+                            <div class="rate">
+                                <div class="text">( 0 تقييم )</div>
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text">
+                                    يبدأ من <span>04 مايو</span> وينتهى
+                                    <span> 07 مايو</span>
+                                </span>
+                            </div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text"> أيام الأسبوع </span>
+                            </div>
+                            <div class="days">
+                                <div class="day">الأحد</div>
+                                <div class="day">الاثنين</div>
+                                <div class="day">الثلاثاء</div>
+                                <div class="day">الأربعاء</div>
+                                <div class="day">الخميس</div>
+                            </div>
+                            <a href="" class="btn-box">طلب البطاقة</a>
                         </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
+                    </div>
+                    <div class="col">
+                        <div class="box-training">
+                            <div class="title">دورة</div>
+                            <div class="title-sm">القدرة المعرفية</div>
+                            <div class="price">
+                                <span>خصم 33%</span>
+                                <span class="num">$250</span>
+                                <span>50$ / الشهر</span>
+                            </div>
+                            <div class="user">
+                                <img
+                                    src="./images/user.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                محمود العارفي
+                            </div>
+                            <div class="text-box">القدرة المعرفية..</div>
+                            <div class="rate">
+                                <div class="text">( 0 تقييم )</div>
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text">
+                                    يبدأ من <span>04 مايو</span> وينتهى
+                                    <span> 07 مايو</span>
+                                </span>
+                            </div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text"> أيام الأسبوع </span>
+                            </div>
+                            <div class="days">
+                                <div class="day">الأحد</div>
+                                <div class="day">الاثنين</div>
+                                <div class="day">الثلاثاء</div>
+                                <div class="day">الأربعاء</div>
+                                <div class="day">الخميس</div>
+                            </div>
+                            <a href="" class="btn-box">طلب البطاقة</a>
                         </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
-                        </div>
-                        <div class="img-holder">
-                            <img src="images/company.png" alt="image">
+                    </div>
+                    <div class="col">
+                        <div class="box-training">
+                            <div class="title">دورة</div>
+                            <div class="title-sm">القدرة المعرفية</div>
+                            <div class="price">
+                                <span>خصم 33%</span>
+                                <span class="num">$250</span>
+                                <span>50$ / الشهر</span>
+                            </div>
+                            <div class="user">
+                                <img
+                                    src="./images/user.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                محمود العارفي
+                            </div>
+                            <div class="text-box">القدرة المعرفية..</div>
+                            <div class="rate">
+                                <div class="text">( 0 تقييم )</div>
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text">
+                                    يبدأ من <span>04 مايو</span> وينتهى
+                                    <span> 07 مايو</span>
+                                </span>
+                            </div>
+                            <div class="date">
+                                <img
+                                    src="./images/icon/date.png"
+                                    alt=""
+                                    class="img"
+                                />
+                                <span class="text"> أيام الأسبوع </span>
+                            </div>
+                            <div class="days">
+                                <div class="day">الأحد</div>
+                                <div class="day">الاثنين</div>
+                                <div class="day">الثلاثاء</div>
+                                <div class="day">الأربعاء</div>
+                                <div class="day">الخميس</div>
+                            </div>
+                            <a href="" class="btn-box">طلب البطاقة</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </Section>
-    <!-- End Section -->
-    <!-- Js Scripts -->
-    <!-- Main JS Bootstrap File -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Main JS FontAwesome File -->
-    <script src="js/all.min.js"></script>
-    <!-- Main JS Swiper File -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Main JS File -->
-    <script src="js/main.js"></script>
-</body>
-
+        </section>
+        <!-- End Section -->
+        <!-- Start Section -->
+        <section class="section-num">
+            <div class="container">
+                <div class="box">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col text-center">
+                            <img src="./images/group.png" alt="" class="img" />
+                            <div class="number">5587+</div>
+                            <div class="text">الوظائف</div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="./images/group1.png" alt="" class="img" />
+                            <div class="number red">5587+</div>
+                            <div class="text">زائر نشط حالياً</div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="./images/group2.png" alt="" class="img" />
+                            <div class="number black">5587+</div>
+                            <div class="text">الشركات</div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="./images/group3.png" alt="" class="img" />
+                            <div class="number green">5587+</div>
+                            <div class="text">الباحثين عن عمل</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Start Section -->
+        <section class="py-5">
+            <div class="container">
+                <h5 class="heading">الباحثين عن العمل</h5>
+                <div
+                    class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5"
+                >
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-user">
+                            <img src="./images/user.png" alt="" class="img" />
+                            <div class="name">غانم الخنيزي (مهندس)</div>
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                المملكة العربية السعودية
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <img
+                                        src="./images/icon/insta.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/twiet.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                                <a href="">
+                                    <img
+                                        src="./images/icon/whats.png"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Start Section -->
+        <section class="section-mobile mb-5">
+            <div class="container">
+                <div class="d-flex flex-column flex-xl-row align-items-center">
+                    <div class="text flex-fill">
+                        <div class="title">احصل على التطبيق الخاص بك</div>
+                        <div class="title-two">
+                            يمكنك العثور عليها بسهولة هذا التطبيق…!
+                        </div>
+                        <div class="text">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                            لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                            للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                            ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+                            توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام
+                            "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها
+                            تبدو (أي الأحرف) وكأنها نص مقروء
+                        </div>
+                        <div class="btns">
+                            <a href="" class="btn-app">
+                                <img
+                                    src="./images/app-store.png"
+                                    alt=""
+                                    class="img"
+                                />
+                            </a>
+                            <a href="" class="btn-app">
+                                <img
+                                    src="./images/play-store.png"
+                                    alt=""
+                                    class="img"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./images/mobile-muckup.png" alt="" class="img" />
+                </div>
+            </div>
+        </section>
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between flex-wrap gap-3">
+                        <div class="info">
+                            <img
+                                src="./images/site-logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                            <div class="text">
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
+                                المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                                إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما.
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div href="" class="title">الأقسام</div>
+                            <a href="" class="item">الرئيسية</a>
+                            <a href="" class="item">نبذة عن الموقع</a>
+                            <a href="" class="item">الباقات</a>
+                            <a href="" class="item">التدريب</a>
+                            <a href="" class="item">صاحب العمل</a>
+                            <a href="" class="item">طالبي العمل</a>
+                        </div>
+                        <div class="items">
+                            <div href="" class="title">الدعم الفنى</div>
+                            <a href="" class="item">مساعده</a>
+                            <a href="" class="item">تواصل معنا</a>
+                        </div>
+                        <div class="box-email">
+                            <div class="text">
+                                اشترك في موقع الوظائف لدينا وكن اول من يعرف عن
+                                خدماتنا وبرامجنا.
+                            </div>
+                            <form class="parent-inp">
+                                <input type="text" placeholder="البريد الالكتروني" class="inp">
+                                <button class="btn-sub">اشتراك</button>
+                            </form>
+                            <div class="social">
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar"></div>
+            <div class="footer-bottom">
+                <div class="container text-center">جميع الحقوق محفوظة لموقع الوظائف  @ 2023    </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- End Section -->
+        <!-- Js Scripts -->
+        <!-- Main JS Bootstrap File -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Main JS FontAwesome File -->
+        <script src="js/all.min.js"></script>
+        <!-- Main JS Swiper File -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Main JS File -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

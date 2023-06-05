@@ -1,0 +1,94 @@
+.footer {
+    background: #838383;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    .footer-top {
+        padding: 40px 0 20px;
+        .info {
+            .logo {
+                width: 90px;
+                height: auto;
+                margin-bottom: 13px;
+            }
+            .text {
+                line-height: 26px;
+                max-width: 402px;
+            }
+        }
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            .title {
+                margin-bottom: 5px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .item {
+                white-space: nowrap;
+                color: white;
+                line-height: 30px;
+            }
+        }
+        .box-email {
+            .text {
+                line-height: 30px;
+                max-width: 282px;
+
+                margin-bottom: 13px;
+            }
+            .parent-inp {
+                width: 400px;
+                margin-bottom: 30px;
+                max-width: 100%;
+                display: flex;
+                align-items: stretch;
+                .inp {
+                    border: 0;
+                    padding: 9px 20px;
+                    border-radius: 0 10px 10px 0;
+                    flex: 1;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $black;
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #828282;
+                    }
+                }
+                .btn-sub {
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding: 10px 18px;
+                    background: #727272;
+                    border-radius: 10px 0px 0px 10px;
+                    color: white;
+                }
+            }
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                i,
+                svg {
+                    font-size: 27px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .bar {
+        height: 0.5px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-bottom {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        padding:  8px 0;
+        color: #ffffff;
+    }
+}
